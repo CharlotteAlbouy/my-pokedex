@@ -1,18 +1,15 @@
-function PokemonCard() {
-	const pokemon = {
-		name: "Bulbasaur",
-		image:
-			"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-	};
+import React from "react";
 
+const PokemonCard: React.FC = () => {
 	return (
 		<figure>
-			<img src={pokemon.image} alt={pokemon.name} />
-			<figcaption>
-				<h1>{pokemon.name}</h1>
-			</figcaption>
+			<img
+				src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+				alt="Bulbasaur"
+			/>
+			<figcaption>Bulbasaur</figcaption>
 		</figure>
 	);
-}
+};
 
 export default PokemonCard;

@@ -1,7 +1,12 @@
+import React from "react";
 import PokemonCard from "./components/PokemonCard";
 
-<div>
-	<PokemonCard />
-</div>;
+const App: React.FC = () => {
+	return (
+		<div>
+			<PokemonCard />
+		</div>
+	);
+};
 
-export default PokemonCard;
+export default App;
